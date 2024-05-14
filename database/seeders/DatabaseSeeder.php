@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
              'name' => 'Test User',
              'email' => 'admin@ccbol24.com',
+             'rol'=>'admin'
          ]);
     }
 }
