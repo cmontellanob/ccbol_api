@@ -19,5 +19,6 @@ use App\Http\Controllers\LoginController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::middleware('jwt.auth')->apiResource('v1/participante', ParticipantesController::class);
+//middleware('jwt.auth')->
+Route::apiResource('v1/participante', ParticipantesController::class);
 Route::post('login',[LoginController::class,'login']);
